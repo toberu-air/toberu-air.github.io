@@ -7,6 +7,9 @@ body {
     background-color: #cceeff; /* Açık mavimsi arka plan */
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın tamamını kapsar */
 }
 
 .header {
@@ -31,7 +34,8 @@ body {
 
 .content {
     text-align: center;
-    margin-top: 100px; /* Plane Models yazısı yukarı taşındı */
+    margin-top: 100px;
+    flex-grow: 1; /* İçeriği footer'dan uzak tutar */
 }
 
 h2 {
@@ -53,15 +57,13 @@ p {
     margin-top: 20px;
 }
 
-/* Footer'ı sayfanın sonunda tutma */
 .footer {
     text-align: center;
-    margin-top: 50px; /* İçeriğin altına biraz boşluk ekler */
-    position: relative;
-    bottom: 0;
-    width: 100%;
     background-color: #f1f1f1;
     padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
 .footer-text {
