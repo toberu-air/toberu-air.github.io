@@ -44,12 +44,24 @@ p {
     color: #555;
 }
 
-.footer {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+/* Ortalamak için ana div */
+.image-gallery {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Resimler arasında boşluk */
+    margin-top: 20px;
+}
+
+/* Footer'ı sayfanın sonunda tutma */
+.footer {
+    text-align: center;
+    margin-top: 50px; /* İçeriğin altına biraz boşluk ekler */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
 }
 
 .footer-text {
@@ -57,9 +69,12 @@ p {
     font-weight: bold;
     color: #333;
     margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .logo-small {
     width: 50px;
     height: auto;
+    display: inline-block;
 }
